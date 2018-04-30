@@ -1,0 +1,13 @@
+user:   - name
+        - address
+        - has_one: - order
+  
+
+product - name
+        - description
+        - belongs_to: category
+category- name
+        - has_many: products
+
+order   - has_many: products
+        - belongs_to: user
